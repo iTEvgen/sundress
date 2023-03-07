@@ -1,7 +1,7 @@
 {
-  "name": "universal",
+  "name": "sundress",
   "private": true,
-  "description": "Новостной сайт",
+  "description": "Торговый центр Сарафан",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^10.4.13",
