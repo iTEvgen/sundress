@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 17.09px;
+  font-weight: normal;
+  word-wrap: break-word;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+
+  // padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1820px;
+    margin: 0 auto;
+    // padding: 0 30px;
+  }
+}
+
+.button {
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: var(--transparent);
+  box-sizing: border-box;
+}
+
+*{
+  outline-offset: -1px;
+}
