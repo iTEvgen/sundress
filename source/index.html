@@ -4,8 +4,219 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shopping center sundress</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Calibri.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header-site header-site--nojs">
+    <div class="header-site__box container">
+
+      <a class="header-site__logo logo-menu" href="">
+        <picture>
+          <source type="image/webp" srcset="img/mobile-site-logo@1x.webp 1x, img/mobile-site-logo@2x.webp 2x">
+          <img class="logo-site__img" src="img/mobile-site-logo@1x.png" srcset="img/mobile-site-logo@2x.png 2x" width="69" height="64" alt="">
+        </picture>
+      </a>
+
+      <div class="header-site__address address-menu">
+        <div class="address-menu__address-box">
+          <p>Режим работы:</p>
+          <p>пн-вс 10:00-21:00</p>
+          <p>Лента 08:00-22:00</p>
+        </div>
+        <p class="address-menu__contacts">
+          <a href="#!">Контакты</a>
+        </p>
+        <p class="address-menu__site-map">
+          <a href="#!">Карта
+            <span>тц</span>
+          </a>
+        </p>
+      </div>
+
+      <form class="header-site__search search-menu" method="get">
+        <p class="search-menu__box">
+          <label class="visually-hidden" for="id-name-search">Поиск по сайту</label>
+          <input class="search-menu__search" id="id-name-search" type="search" placeholder="Найти магазин">
+          <button class="search-button button" type="button">
+            <span class="visually-hidden">Искать</span>
+            <svg aria-hidden="true" focusable="false" width="15" height="17">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </p>
+      </form>
+
+      <nav class="header-site__nav nav-menu">
+        <button class="nav-menu__button button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg aria-hidden="true" focusable="false" width="32" height="24">
+            <use xlink:href="#icon-menu">
+          </svg>
+        </button>
+
+        <div class="nav-menu__box">
+          <ul class="nav-menu__main-nav main-nav">
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">О нас</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">События</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Галерея</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Аренда</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Карта ТЦ</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Контакты</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Вакансии</a>
+            </li>
+            <li class="main-nav__list">
+              <a class="main-nav__link" href="#!">Тендеры</a>
+            </li>
+          </ul>
+
+          <ul class="nav-menu__site-shops shops-nav">
+            <li class="shops__item nested-shops">
+              <a class="shops-nav__title" href="#!">Магазины</a>
+              <ul class="nested-shops__list">
+
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Все магазины</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Женская одежда</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Мужская одежда</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Детская одежда</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Детские товары</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Обувь</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Кожгалантерея</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Продукты</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Цифровая и бытовая техника</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Парфюмерия, косметика</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Ювелирные украшения</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Сувениры, подарки</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Полезное</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Товары для дома</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Спортивные товары, одежда</a>
+                </li>
+                <li class="nested-shops__item">
+                  <a class="nested-shops__link" href="">Товары для животных</a>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav-menu__cafe cafe-nav">
+            <li class="cafe__item nested-cafe">
+              <a class="cafe-nav__title" href="#!" >Кафе и рестораны</a>
+              <ul class="nested-cafe__list">
+                <li class="nested-cafe__item">
+                  <a class="nested-cafe__link" href="#!">Кафе и рестораны</a>
+                </li>
+                <li class="nested-cafe__item">
+                  <a class="nested-cafe__link" href="#!">Рестораны быстрого обслуживания</a>
+                </li>
+                <li class="nested-cafe__item">
+                  <a class="nested-cafe__link" href="#!">Кофейни</a>
+                </li>
+                <li class="nested-cafe__item">
+                  <a class="nested-cafe__link" href="#!">Мороженое и десерты</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav-menu__services services-nav">
+            <li class="services-nav__list nested-services">
+              <a class="services-nav__title" href="">Услуги и сервисы</a>
+              <ul class="nested-services__list">
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Банкоматы</a>
+                </li>
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Салоны связи</a>
+                </li>
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Парикмахерские</a>
+                </li>
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Администрация</a>
+                </li>
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Продукты</a>
+                </li>
+                <li class="nested-services__list">
+                  <a class="nested-services__link" href="">Другое</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav-menu__entertainment entertainment-site">
+            <li class="entertainment__item nested-entertainment">
+              <a class="entertainment-site__title" href="">Развлечения</a>
+              <ul class="nested-entertainment__list">
+                <li class="nested-entertainment__item">
+                  <a class="nested-entertainment__link" href="">Джунгли парк</a>
+                </li>
+                <li class="nested-entertainment__item">
+                  <a class="nested-entertainment__link" href="">Мероприятия</a>
+                </li>
+                <li class="nested-entertainment__item">
+                  <a class="nested-entertainment__link" href="">Акции</a>
+                </li>
+                <li class="nested-entertainment__item">
+                  <a class="nested-entertainment__link" href="">Новости</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    
+  </main>
+  <footer>3</footer>
 </body>
 </html>

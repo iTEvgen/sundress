@@ -1,0 +1,16 @@
+:root {
+  --transparent: transparent;
+  --basic-white: #ffffff;
+  --basic-black: #151516;
+  --basic-grey--500: #6b7073;
+  --basic-grey--400: #c4c4c4;
+  --basic-grey--300: #e4e4e4;
+
+  --basic-red--500: #cd3b31;
+  --basic-red--400: #ed6259;
+  --basic-red--gradient : linear-gradient(144.46deg, var(--basic-red--500) 15.22%, var(--basic-red--400) 88.02%);
+}
+
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1820px;

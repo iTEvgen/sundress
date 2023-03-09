@@ -8,6 +8,7 @@ build/
 *.psd
 *.sublime*
 *.odt
+*.odt#
 *.txt
 node_modules/
 npm-debug.*
