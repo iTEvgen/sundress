@@ -28,5 +28,18 @@
 }
 
 .space-content__image {
+  position: relative;
   margin: 0;
+  margin-bottom: 10px;
+  padding: 0 0 58% 0;
+  overflow: hidden;
+}
+
+.space-content__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

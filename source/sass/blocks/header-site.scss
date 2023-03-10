@@ -113,12 +113,13 @@
 //header-site__search
 .header-site__search {
   grid-area: form;
+  padding: 37px 20px 69px;
   padding-top: 37px;
   padding-bottom: 69px;
+
 }
 
 .search-menu {
-  // padding: 0 20px;
   background-color: var(--basic-white);
   box-sizing: border-box;
 }
