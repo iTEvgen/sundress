@@ -13,8 +13,8 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="header-site header-site--nojs">
-    <div class="header-site__box container">
+  <header class="header-site header-site--closed">
+    <div class="header-site__box">
 
       <a class="header-site__logo logo-menu" href="">
         <picture>
@@ -214,8 +214,208 @@
       </nav>
     </div>
   </header>
-  <main>
-    
+
+  <main class="main-site">
+    <h1 class="visually-hidden">Торговый центр "Сарафан"</h1>
+    <div class="container">
+      <section class="main-site__rent rent-content">
+        <div class="rent-content__heading-box">
+          <h2 class="rent-content__heading">Аренда в ТУЦ “Сарафан”</h2>
+        </div>
+
+        <div class="rent-content__lead-box">
+          <p class="rent-content__lead">Торговый центр «Сарафан», расположенный по адресу: г. Тула, ул. Путейская, д.5 (Площадь Московского вокзала), предлагает помещения в аренду от собственника от 25 до 1000 кв. м.</p>
+        </div>
+
+        <div class="rent-content__link-box">
+          <a class="rent-content__presentation" href="presentation/presentation.pdf" target="_blank" >
+            <span>Скачать презентацию</span>
+            <svg aria-hidden="true" focusable="false" width="22" height="22">
+              <use xlink:href="#icon-download"></use>
+            </svg>
+          </a>
+        </div>
+
+        <div class="rent-content__advantages advantages">
+          <p class="advantages__lead">Преимущества аренды в нашем торговом центре:</p>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__text">ТЦ «Сарафан» находится в 5 минутах езды от центра города на площади Московского вокзала на одной из самых оживленных улиц города – Красноармейский проспект.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__text">Рядом жилой массив, пересечение основных транспортных и пешеходных потоков –конечная остановка общественного транспорта, железнодорожный вокзал.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__text">На территории ТЦ «Сарафан» есть бесплатная парковка для клиентов, более 500 машиномест, удобный подъезд.</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__text">Ежедневно наш ТЦ посещает порядка 10 000 тысяч человек различной целевой аудитории</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__text">Демократичные цены за аренду площади</p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__text">У нас Вы можете арендовать площадь под магазины белья, одежды и обуви, салоны, точки общепита и др.</p>
+            </li>
+          </ul>
+          <p class="advantages__small-text">Открытие торговой точки в одном из оживленных мест города обеспечит доходность, развитие и процветание Вашего бизнеса.</p>
+        </div>
+
+        <figure class="rent-content__images">
+          <picture>
+            <source type="image/webp" srcset="img/rent-images@1x.webp 1x, img/rent-images@2x.webp 2x">
+            <img class="rent-content__img" src="img/rent-images@1x.jpg" srcset="img/rent-images@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+      </section>
+
+      <section class="main-site__tenants tenants-content">
+        <h2 class="visually-hidden">Наши постоянные арендаторы</h2>
+        <div class="tenants-content__title-box">
+          <p class="tenants-content__title">Более 130 бутиков и магазинов уже арендуют у нас помещения</p>
+        </div>
+        <div class="tenants-content__slider slider-tenants slider">
+          <div class="slider-tenants__list slider__list">
+
+            <div class="slider-tenants__item slider__item">
+              <figure class="slider-tenants__image">
+                <picture>
+                  <source srcset="img/tenants-images-one@1x.webp 1x, img/tenants-images-one@2x.webp 2x">
+                  <img class="slider-tenants__img" src="img/tenants-images-one@1x.jpg" srcset="img/tenants-images-one@2x.jpg 2x" alt="">
+                </picture>
+              </figure>
+            </div>
+
+            <div class="slider-tenants__item slider__item">
+              <figure class="slider-tenants__image">
+                <picture>
+                  <source srcset="img/tenants-images-two@1x.webp 1x, img/tenants-images-two@2x.webp 2x">
+                  <img class="slider-tenants__img" src="img/tenants-images-two@1x.jpg" srcset="img/tenants-images-two@12.jpg 2x" alt="">
+                </picture>
+              </figure>
+            </div>
+
+            <div class="slider-tenants__item slider__item">
+              <figure class="slider-tenants__image">
+                <picture>
+                  <source srcset="img/tenants-images-three@1x.webp 1x, img/tenants-images-three@2x.webp 2x">
+                  <img class="slider-tenants__img" src="img/tenants-images-three@1x.jpg" srcset="img/tenants-images-three@2x.jpg 2x" alt="">
+                </picture>
+              </figure>
+            </div>
+
+          </div>
+
+          <div class="slider-tenants__buttons slider__buttons">
+
+            <button class="slider-tenants__btn slider-tenants__btn--prev slider__btn-prev button">
+              <span class="visually-hidden">Назад</span>
+              <svg aria-hidden="true" focusable="false" width="41" height="16">
+                <use xlink:href="#icon-arrow">
+              </svg>
+            </button>
+
+            <div class="slider-tenants__carousel carousel slider__carousel">
+              <span class="carousel__item carousel__item--current"></span>
+              <span class="carousel__item"></span>
+              <span class="carousel__item"></span>
+            </div>
+
+            <button class="slider-tenants__btn slider-tenants__btn--next slider__btn-netx button">
+              <span class="visually-hidden">Вперед</span>
+              <svg aria-hidden="true" focusable="false"  width="41" height="16">
+                <use xlink:href="#icon-arrow">
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+        <ul class="tenants-content__list">
+          <li class="tenants-content__item">
+            <p class="tenants-content__text">Якорные арендаторы - Лента, Детский Мир, Технопарк, Модис, Familia, Читай город, Тутанхамон, Л'Этуаль</p>
+          </li>
+          <li class="tenants-content__item">
+            <p class="tenants-content__text">Бренды - EWA, Artigli, Gerzedo, Goergo, Du monde, Petek, Neri Karra, Ledy Collection, Paolo Conte, P'Cont, VINZER, Ace, Tonnelli, Milavitsa, и др.</p>
+          </li>
+          <li class="tenants-content__item">
+            <p class="tenants-content__text">Магазины спортивной одежды и инвентаря: Адреналин, Спорт Лайн</p>
+          </li>
+          <li class="tenants-content__item">
+            <p class="tenants-content__text">Зона фудкорта - Burger King, Империя вкуса, Про Кофий, Добрая сдоба</p>
+          </li>
+          <li class="tenants-content__item">
+            <p class="tenants-content__text">Салоны связи: Билайн, Мегафон, YOTA, Связной, Теле2</p>
+          </li>
+          <li class="tenants-content__item">
+            <p class="tenants-content__text"> Зоосад, аптека «Здесь аптека», «Арт-оптика», Fresh Оптика, ковры, салоны штор, текстиль Missis Hatson и Home TEX, салон Арт-Самовар, посуда, подарки, картины, сувениры и другие.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main-site__space space-content">
+        <h2 class="visually-hidden">Не придумывается заголовок</h2>
+
+        <dl class="space-content__meta meta-content">
+          <div class="meta-content__text-box">
+            <dt class="meta-content__term">Общая площадь<br> торгового центра</dt>
+            <dd class="meta-content__definition">25 816 м<sup>2</sup></dd>
+          </div>
+
+          <div class="meta-content__text-box">
+            <dt class="meta-content__term">Площадь, сдаваемая<br> в аренду</dt>
+            <dd class="meta-content__definition">16 675 м<sup>2</sup></dd>
+          </div>
+
+          <div class="meta-content__text-box">
+            <dt class="meta-content__term">Парковка<br> (машиномест)
+              </dt>
+            <dd class="meta-content__definition">500</dd>
+          </div>
+
+          <div class="meta-content__text-box">
+            <dt class="meta-content__term">Посещаемость<br> (в неделю)</dt>
+            <dd class="meta-content__definition">100 000 чел</dd>
+          </div>
+        </dl>
+
+        <figure class="space-content__image">
+          <picture>
+            <source type="image/webp" srcset="img/space-content-img1@1x.webp 1x, img/space-content-img1@2x.webp 2x">
+            <img class="space-content__img" src="img/space-content-img1@1x.jpg" srcset="img/space-content-img1@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+
+        <figure class="space-content__image">
+          <picture>
+            <source type="image/webp" srcset="img/space-content-img2@1x.webp 1x, img/space-content-img2@2x.webp 2x">
+            <img class="space-content__img" src="img/space-content-img2@1x.jpg" srcset="img/space-content-img2@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+
+        <figure class="space-content__image">
+          <picture>
+            <source type="image/webp" srcset="img/space-content-img3@1x.webp 1x, img/space-content-img3@2x.webp 2x">
+            <img class="space-content__img" src="img/space-content-img3@1x.jpg" srcset="img/space-content-img3@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+
+        <figure class="space-content__image">
+          <picture>
+            <source type="image/webp" srcset="img/space-content-img4@1x.webp 1x, img/space-content-img4@2x.webp 2x">
+            <img class="space-content__img" src="img/space-content-img4@1x.jpg" srcset="img/space-content-img4@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+
+        <figure class="space-content__image">
+          <picture>
+            <source type="image/webp" srcset="img/space-content-img5@1x.webp 1x, img/space-content-img5@2x.webp 2x">
+            <img class="space-content__img" src="img/space-content-img5@1x.jpg" srcset="img/space-content-img5@2x.jpg 2x" alt="">
+          </picture>
+        </figure>
+
+      </section>
+    </div>
   </main>
   <footer>3</footer>
 </body>
