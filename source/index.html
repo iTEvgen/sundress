@@ -13,7 +13,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="header-site header-site--closed">
+  <header class="header-site header-site--nojs">
     <div class="header-site__box">
 
       <a class="header-site__logo logo-menu" href="">
@@ -417,6 +417,117 @@
       </section>
     </div>
   </main>
-  <footer>3</footer>
+  <footer class="footer-site">
+    <div class="footer-site__box container">
+
+      <a class="footer-site__link-logo" href="">
+        <picture>
+          <source type="image/webp" srcset="img/footer-logo@1x.webp 1x, img/footer-logo@2x.webp 2x">
+          <img class="footer-site__img" src="img/footer-logo@1x.png" srcset="img/footer-logo@2x.png 2x" alt="">
+        </picture>
+      </a>
+
+      <div class="footer-site__menu-box">
+
+        <ul class="footer-site__lits">
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Магазины</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Кафе и рестораны</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Услуги и сервисы</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Развлечения</a>
+          </li>
+        </ul>
+
+        <ul class="footer-site__lits">
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">О нас</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">События</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Галерея</a>
+          </li>
+        </ul>
+
+        <ul class="footer-site__lits">
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Аренда</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Контакты</a>
+          </li>
+
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Вакансии</a>
+          </li>
+        </ul>
+
+        <ul class="footer-site__lits">
+          <li class="footer-site__item">
+            <a class="footer-site__link" href="">Тендеры</a>
+          </li>
+
+          <li class="footer-site__item footer-site__item--current">
+            <a class="footer-site__link" href="">Политика конфиденциальности</a>
+          </li>
+
+          <li class="footer-site__item footer-site__item--current">
+            <a class="footer-site__link" href="">Карта ТЦ</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <form class="footer-site__form search-menu" method="get">
+        <p class="search-menu__box">
+          <label class="visually-hidden" for="id-name-search-footer">Поиск по сайту</label>
+          <input class="search-menu__search" id="id-name-search-footer" type="search" placeholder="Найти магазин">
+          <button class="search-button button" type="button">
+            <span class="visually-hidden">Искать</span>
+            <svg aria-hidden="true" focusable="false" width="15" height="17">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </p>
+      </form>
+
+      <ul class="footer-site__social social">
+        <li class="social__item">
+          <a class="social__link" href="#!">
+            <svg class="social__icon" aria-hidden="true" focusable="false" width="23" height="20">
+              <use xlink:href="#icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a class="social__link" href="#!">
+            <svg class="social__icon" aria-hidden="true" focusable="false" width="23" height="14">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-site__address address">
+        <p class="address__street">300041, Тульская обл.,<br> г. Тула, ул. Путейская, д. 5</p>
+        <p class="address__time">ТЦ Сарафан: 10:00-21:00<br> Лента: 08:00-22:00</p>
+        <p class="address__telephone">+7 (4872) 33-80-55</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
