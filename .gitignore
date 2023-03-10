@@ -5,7 +5,7 @@ build/
 *.ai
 *.log
 *.pdf
-*.psd
+
 *.sublime*
 *.odt
 *.odt#

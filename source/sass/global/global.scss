@@ -9,7 +9,7 @@ body {
   min-height: 100%;
   font-family: "Calibri", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 17.09px;
+  line-height: 17px;
   font-weight: normal;
   word-wrap: break-word;
   color: var(--basic-black);
@@ -37,8 +37,7 @@ img {
 }
 
 .container {
-
-  // padding: 0 20px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
 
