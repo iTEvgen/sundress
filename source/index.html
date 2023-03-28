@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>shopping center sundress</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" sizes="any" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="icon" type="image/svg" href="img/favicon/favicon.svg">
+  <link rel="manifest" href="universal.webmanifest">
   <link rel="preload" href="fonts/Calibri.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
@@ -13,11 +17,12 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="header-site header-site--nojs">
+  <header class="header-site header-site--closed">
     <div class="header-site__box">
 
       <a class="header-site__logo logo-menu" href="">
         <picture>
+          <source media="(min-width: 1024px)" srcset="img/tablet-site-logo@1x.png 1x, img/tablet-site-logo@2x.png 2x">
           <source type="image/webp" srcset="img/mobile-site-logo@1x.webp 1x, img/mobile-site-logo@2x.webp 2x">
           <img class="logo-site__img" src="img/mobile-site-logo@1x.png" srcset="img/mobile-site-logo@2x.png 2x" width="69" height="64" alt="">
         </picture>
@@ -55,7 +60,7 @@
       <nav class="header-site__nav nav-menu">
         <button class="nav-menu__button button" type="button">
           <span class="visually-hidden">Закрыть</span>
-          <svg aria-hidden="true" focusable="false" width="32" height="24">
+          <svg class="nav-menu__icon-button" aria-hidden="true" focusable="false" width="32" height="24">
             <use xlink:href="#icon-menu">
           </svg>
         </button>
@@ -88,124 +93,124 @@
             </li>
           </ul>
 
-          <ul class="nav-menu__site-shops shops-nav">
-            <li class="shops__item nested-shops">
-              <a class="shops-nav__title" href="#!">Магазины</a>
-              <ul class="nested-shops__list">
+          <ul class="nav-menu__list shops-nav">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link " href="#!">Магазины</a>
+              <ul class="nav-menu__inner-list nested-shops">
 
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Все магазины</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Все магазины</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Женская одежда</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Женская одежда</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Мужская одежда</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Мужская одежда</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Детская одежда</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Детская одежда</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Детские товары</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Детские товары</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Обувь</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Обувь</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Кожгалантерея</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Кожгалантерея</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Продукты</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Продукты</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Цифровая и бытовая техника</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Цифровая и бытовая техника</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Парфюмерия, косметика</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Парфюмерия, косметика</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Ювелирные украшения</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Ювелирные украшения</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Сувениры, подарки</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Сувениры, подарки</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Полезное</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Полезное</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Товары для дома</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Товары для дома</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Спортивные товары, одежда</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Спортивные товары, одежда</a>
                 </li>
-                <li class="nested-shops__item">
-                  <a class="nested-shops__link" href="">Товары для животных</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Товары для животных</a>
                 </li>
 
               </ul>
             </li>
           </ul>
-          <ul class="nav-menu__cafe cafe-nav">
-            <li class="cafe__item nested-cafe">
-              <a class="cafe-nav__title" href="#!" >Кафе и рестораны</a>
-              <ul class="nested-cafe__list">
-                <li class="nested-cafe__item">
-                  <a class="nested-cafe__link" href="#!">Кафе и рестораны</a>
+          <ul class="nav-menu__list cafe-nav">
+            <li class="nav-menu__item ">
+              <a class="nav-menu__link" href="#!" >Кафе и рестораны</a>
+              <ul class="nav-menu__inner-list nested-cafe">
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="#!">Кафе и рестораны</a>
                 </li>
-                <li class="nested-cafe__item">
-                  <a class="nested-cafe__link" href="#!">Рестораны быстрого обслуживания</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="#!">Рестораны быстрого обслуживания</a>
                 </li>
-                <li class="nested-cafe__item">
-                  <a class="nested-cafe__link" href="#!">Кофейни</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="#!">Кофейни</a>
                 </li>
-                <li class="nested-cafe__item">
-                  <a class="nested-cafe__link" href="#!">Мороженое и десерты</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav-menu__services services-nav">
-            <li class="services-nav__list nested-services">
-              <a class="services-nav__title" href="">Услуги и сервисы</a>
-              <ul class="nested-services__list">
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Банкоматы</a>
-                </li>
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Салоны связи</a>
-                </li>
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Парикмахерские</a>
-                </li>
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Администрация</a>
-                </li>
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Продукты</a>
-                </li>
-                <li class="nested-services__list">
-                  <a class="nested-services__link" href="">Другое</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="#!">Мороженое и десерты</a>
                 </li>
               </ul>
             </li>
           </ul>
 
-          <ul class="nav-menu__entertainment entertainment-site">
-            <li class="entertainment__item nested-entertainment">
-              <a class="entertainment-site__title" href="">Развлечения</a>
-              <ul class="nested-entertainment__list">
-                <li class="nested-entertainment__item">
-                  <a class="nested-entertainment__link" href="">Джунгли парк</a>
+          <ul class="nav-menu__list services-nav">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="">Услуги и сервисы</a>
+              <ul class="nav-menu__inner-list nested-services">
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Банкоматы</a>
                 </li>
-                <li class="nested-entertainment__item">
-                  <a class="nested-entertainment__link" href="">Мероприятия</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Салоны связи</a>
                 </li>
-                <li class="nested-entertainment__item">
-                  <a class="nested-entertainment__link" href="">Акции</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Парикмахерские</a>
                 </li>
-                <li class="nested-entertainment__item">
-                  <a class="nested-entertainment__link" href="">Новости</a>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Администрация</a>
+                </li>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Продукты</a>
+                </li>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Другое</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav-menu__list entertainment-site">
+            <li class="nav-menu__item">
+              <a class="nav-menu__link" href="">Развлечения</a>
+              <ul class="nav-menu__inner-list nested-entertainment">
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Джунгли парк</a>
+                </li>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Мероприятия</a>
+                </li>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Акции</a>
+                </li>
+                <li class="nav-menu__inner-item">
+                  <a class="nav-menu__inner-link" href="">Новости</a>
                 </li>
               </ul>
             </li>
@@ -277,7 +282,7 @@
         <div class="tenants-content__slider slider-tenants slider">
           <div class="slider-tenants__list slider__list">
 
-            <div class="slider-tenants__item slider__item">
+            <div class="slider-tenants__item slider__item slider__item--mdfElem0">
               <figure class="slider-tenants__image">
                 <picture>
                   <source srcset="img/tenants-images-one@1x.webp 1x, img/tenants-images-one@2x.webp 2x">
@@ -286,7 +291,7 @@
               </figure>
             </div>
 
-            <div class="slider-tenants__item slider__item">
+            <div class="slider-tenants__item slider__item slider__item--mdfElem1">
               <figure class="slider-tenants__image">
                 <picture>
                   <source srcset="img/tenants-images-two@1x.webp 1x, img/tenants-images-two@2x.webp 2x">
@@ -379,35 +384,35 @@
           </div>
         </dl>
 
-        <figure class="space-content__image">
+        <figure class="space-content__image space-content__image--mdfElem0">
           <picture>
             <source type="image/webp" srcset="img/space-content-img1@1x.webp 1x, img/space-content-img1@2x.webp 2x">
             <img class="space-content__img" src="img/space-content-img1@1x.jpg" srcset="img/space-content-img1@2x.jpg 2x" alt="">
           </picture>
         </figure>
 
-        <figure class="space-content__image">
+        <figure class="space-content__image space-content__image--mdfElem1">
           <picture>
             <source type="image/webp" srcset="img/space-content-img2@1x.webp 1x, img/space-content-img2@2x.webp 2x">
             <img class="space-content__img" src="img/space-content-img2@1x.jpg" srcset="img/space-content-img2@2x.jpg 2x" alt="">
           </picture>
         </figure>
 
-        <figure class="space-content__image">
+        <figure class="space-content__image space-content__image--mdfElem2">
           <picture>
             <source type="image/webp" srcset="img/space-content-img3@1x.webp 1x, img/space-content-img3@2x.webp 2x">
             <img class="space-content__img" src="img/space-content-img3@1x.jpg" srcset="img/space-content-img3@2x.jpg 2x" alt="">
           </picture>
         </figure>
 
-        <figure class="space-content__image">
+        <figure class="space-content__image space-content__image--mdfElem3">
           <picture>
             <source type="image/webp" srcset="img/space-content-img4@1x.webp 1x, img/space-content-img4@2x.webp 2x">
             <img class="space-content__img" src="img/space-content-img4@1x.jpg" srcset="img/space-content-img4@2x.jpg 2x" alt="">
           </picture>
         </figure>
 
-        <figure class="space-content__image">
+        <figure class="space-content__image space-content__image--mdfElem4">
           <picture>
             <source type="image/webp" srcset="img/space-content-img5@1x.webp 1x, img/space-content-img5@2x.webp 2x">
             <img class="space-content__img" src="img/space-content-img5@1x.jpg" srcset="img/space-content-img5@2x.jpg 2x" alt="">
@@ -507,7 +512,7 @@
       <ul class="footer-site__social social">
         <li class="social__item">
           <a class="social__link" href="#!">
-            <svg class="social__icon" aria-hidden="true" focusable="false" width="23" height="20">
+            <svg class="social__icon social__icon--telegram" aria-hidden="true" focusable="false" width="23" height="20">
               <use xlink:href="#icon-telegram"></use>
             </svg>
           </a>
@@ -515,7 +520,7 @@
 
         <li class="social__item">
           <a class="social__link" href="#!">
-            <svg class="social__icon" aria-hidden="true" focusable="false" width="23" height="14">
+            <svg class="social__icon social__icon--vk" aria-hidden="true" focusable="false" width="23" height="14">
               <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
@@ -525,7 +530,7 @@
       <div class="footer-site__address address">
         <p class="address__street">300041, Тульская обл.,<br> г. Тула, ул. Путейская, д. 5</p>
         <p class="address__time">ТЦ Сарафан: 10:00-21:00<br> Лента: 08:00-22:00</p>
-        <p class="address__telephone">+7 (4872) 33-80-55</p>
+        <a class="address__telephone" href="tel:+74872338055">+7 (4872) 33-80-55</a>
       </div>
     </div>
   </footer>

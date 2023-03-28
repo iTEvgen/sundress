@@ -39,15 +39,15 @@ img {
 .container {
   padding: 0 20px;
 
-  @media (min-width: $tablet-width) {
-
-
+  @media (min-width: $laptop-width) {
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1820px;
+    width: 1752px;
     margin: 0 auto;
-    // padding: 0 30px;
+    padding: 0 34px;
+
   }
 }
 
