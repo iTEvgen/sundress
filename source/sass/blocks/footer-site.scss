@@ -1,11 +1,66 @@
 .footer-site {
   margin-top: 48px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  box-shadow: 0px 1px 44px rgba(0, 0, 0, 0.12);
+
+  @media (min-width: $laptop-width-l) {
+    margin-top: 91px;
+  }
+
+  @media (min-width: $laptop-width) {
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    padding-top: 26px;
+  }
 }
 
 .footer-site__box {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+
+  @media (min-width: $mobile-width-l) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "img img"
+    "menu menu"
+    "search search"
+    "address social";
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+    "img img"
+    "menu menu"
+    "search address"
+    "social address";
+    column-gap: 60px;
+  }
+
+  @media (min-width: $laptop-width) {
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-areas:
+    "img img img"
+    "menu search address"
+    "menu social address";
+    column-gap: 20px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    grid-template-columns: auto max-content 1fr max-content;
+    grid-template-areas:
+    "img menu search address"
+    "img menu social address ";
+    column-gap: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 133px;
+  }
 }
 
 //footer-site__link-logo
@@ -14,15 +69,48 @@
   justify-content: center;
   order: -2;
   margin-bottom: 23px;
+
+  @media (min-width: $mobile-width-l) {
+    grid-area: img;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    margin-bottom: 0;
+    padding-top: 16px;
+  }
 }
 
 .footer-site__img {
   display: block;
+
+  @media (min-width: $laptop-width-l) {
+    width: 170px;
+    height: 147px;
+  }
 }
 
 //footer-site__menu-box
 .footer-site__menu-box {
   margin-bottom: 11px;
+
+  @media (min-width: $mobile-width-l) {
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $laptop-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $laptop-width) {
+    column-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 100px;
+  }
 }
 
 .footer-site__lits {
@@ -38,12 +126,30 @@
   &--current {
     display: block;
   }
+
+  @media (min-width: $mobile-width-l) {
+    display: block;
+  }
 }
 
 //footer-site__form
 .footer-site__form {
-  margin-bottom: 9px;
   order: -1;
+  margin-bottom: 9px;
+
+  @media (min-width: $mobile-width-l) {
+    grid-area: search;
+    order: 0;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    padding-top: 14px;
+  }
 }
 
 .footer-site__link {
@@ -54,6 +160,14 @@
   color: inherit;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: $mobile-width-l) {
+    text-align: left;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    padding: 16px 0 16px;
+  }
 }
 
 //footer-site__social
@@ -62,6 +176,11 @@
   padding: 0;
   list-style: none;
   order: 2;
+
+  @media (min-width: $mobile-width-l) {
+    grid-area: social;
+    order: 0;
+  }
 }
 
 .social {
@@ -71,6 +190,15 @@
   justify-content: center;
   column-gap: 33px;
   row-gap: 15px;
+
+  @media (min-width: $mobile-width-l) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $laptop-width) {
+    column-gap: 22px;
+  }
 }
 
 .social__link {
@@ -81,17 +209,48 @@
   height: 45px;
   background-color: var(--basic-grey--300);
   border-radius: 50%;
+
+  @media (min-width: $laptop-width) {
+    width: 37px;
+    height: 37px;
+  }
 }
 
 .social__icon {
   width: 28px;
   height: 24px;
+
+  @media (min-width: $laptop-width) {
+    width: 23px;
+
+    &--telegram {
+      height: 19px;
+    }
+
+    &--vk {
+      height: 13px;
+    }
+  }
 }
 
 //footer-site__address
 .footer-site__address {
   margin-bottom: 27px;
   order: 1;
+
+  @media (min-width: $mobile-width-l) {
+    grid-area: address;
+    order: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $laptop-width) {
+    padding-top: 13px;
+  }
+
+  @media (min-width: $laptop-width-l) {
+    padding-top: 16px;
+  }
 }
 
 .address {
@@ -101,6 +260,12 @@
   p {
 
     text-align: center;
+  }
+
+  @media (min-width: $mobile-width-l) {
+    p {
+      text-align: left;
+    }
   }
 }
 
@@ -116,7 +281,20 @@
 
 .address__telephone {
   margin: 0;
+  color: inherit;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: $mobile-width-l) {
+    text-align: left;
+  }
+
+  @media (min-width: $laptop-width) {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+  }
 }
